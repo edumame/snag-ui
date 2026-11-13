@@ -1,0 +1,4 @@
+node_modules/
+test/out/
+test/.profile/
+test/.profile-picker/

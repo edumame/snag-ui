@@ -1,0 +1,17 @@
+{
+  "name": "snag-ui",
+  "private": true,
+  "type": "module",
+  "description": "Chrome extension: pick UI on any page, get a compact React component.",
+  "scripts": {
+    "test": "node test/run.mjs && node test/check-jsx.mjs",
+    "test:sites": "node test/run.mjs --suite test/sites.json && node test/check-jsx.mjs",
+    "test:picker": "node test/picker.mjs",
+    "icons": "node test/make-icons.mjs"
+  },
+  "devDependencies": {
+    "@tailwindcss/browser": "^4.3.5",
+    "esbuild": "^0.28.2",
+    "playwright": "^1.56.0"
+  }
+}

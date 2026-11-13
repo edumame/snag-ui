@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snag UI</title>
+  <link rel="icon" href="../icons/32.png">
+  <link rel="stylesheet" href="result.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><img src="../icons/32.png" alt="" width="20" height="20"> Snag UI</div>
+    <div class="source">
+      <div class="label" id="label">Loading…</div>
+      <a class="url" id="url" target="_blank" rel="noreferrer"></a>
+    </div>
+    <label class="history">
+      <span>Recent</span>
+      <select id="history"></select>
+    </label>
+  </header>
+
+  <section class="stats" id="stats"></section>
+  <div class="warnings" id="warnings" hidden></div>
+
+  <main class="layout">
+    <section class="panel code-panel">
+      <div class="toolbar">
+        <div class="tabs" role="tablist" id="tabs">
+          <button role="tab" data-tab="tailwind" aria-selected="true">React + Tailwind</button>
+          <button role="tab" data-tab="module">React + CSS Module</button>
+          <button role="tab" data-tab="html">HTML + CSS</button>
+        </div>
+        <div class="options">
+          <label class="field">
+            <span>Component</span>
+            <input id="name" spellcheck="false" autocomplete="off">
+          </label>
+          <label class="check">
+            <input type="checkbox" id="maps" checked>
+            <span>Turn repeated items into <code>.map()</code></span>
+          </label>
+        </div>
+      </div>
+      <div id="files" class="files"></div>
+    </section>
+
+    <section class="panel preview-panel">
+      <div class="toolbar">
+        <div class="seg" id="view">
+          <button data-view="both" aria-pressed="true">Side by side</button>
+          <button data-view="rebuilt" aria-pressed="false">Rebuilt</button>
+          <button data-view="original" aria-pressed="false">Original</button>
+        </div>
+      </div>
+      <div class="stage" id="stage">
+        <figure class="pane" id="pane-original">
+          <figcaption>Original (screenshot)</figcaption>
+          <div class="canvas"><img id="shot" alt="Screenshot of the original element"></div>
+        </figure>
+        <figure class="pane" id="pane-rebuilt">
+          <figcaption>Rebuilt from the generated code</figcaption>
+          <div class="canvas" id="rebuilt-canvas"><div class="scaler" id="scaler"><iframe id="preview" title="Rebuilt preview" sandbox="allow-same-origin"></iframe></div></div>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <script src="../shared/base.js"></script>
+  <script src="../shared/emit.js"></script>
+  <script src="result.js"></script>
+</body>
+</html>

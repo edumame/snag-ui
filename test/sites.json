@@ -1,0 +1,62 @@
+[
+  {
+    "name": "tw-header",
+    "url": "https://tailwindcss.com",
+    "sel": "body > div:nth-of-type(2) > div > div:nth-of-type(1)",
+    "wait": 1500
+  },
+  {
+    "name": "tw-hero",
+    "url": "https://tailwindcss.com",
+    "sel": "body > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1)",
+    "wait": 1500
+  },
+  {
+    "name": "tw-footer",
+    "url": "https://tailwindcss.com",
+    "sel": "body > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(4) > footer",
+    "wait": 1500
+  },
+  {
+    "name": "gh-header",
+    "url": "https://github.com",
+    "sel": "body > div:nth-of-type(1) > div:nth-of-type(2) > react-partial:nth-of-type(4) > div:nth-of-type(1) > div:nth-of-type(1)",
+    "wait": 2000
+  },
+  {
+    "name": "gh-footer",
+    "url": "https://github.com",
+    "sel": "footer",
+    "wait": 2000
+  },
+  {
+    "name": "stripe-nav",
+    "url": "https://stripe.com",
+    "sel": "body > div:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1)",
+    "wait": 2500
+  },
+  {
+    "name": "stripe-hero",
+    "url": "https://stripe.com",
+    "sel": "main > section:nth-of-type(1) > div:nth-of-type(1)",
+    "wait": 2500
+  },
+  {
+    "name": "stripe-personalize",
+    "url": "https://stripe.com",
+    "sel": "main > section:nth-of-type(3) > div",
+    "wait": 2500
+  },
+  {
+    "name": "wiki-header",
+    "url": "https://en.wikipedia.org/wiki/Web_browser",
+    "sel": "header.vector-header",
+    "wait": 1500
+  },
+  {
+    "name": "wiki-infobox",
+    "url": "https://en.wikipedia.org/wiki/Google_Chrome",
+    "sel": "table.infobox",
+    "wait": 1500
+  }
+]
