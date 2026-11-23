@@ -1,6 +1,8 @@
 # Snag UI
 
-A Chrome extension that turns any element on any website into a compact React component.
+## Good artists copy, great artists steal. Find inspiration from the webpages you use everyday. 
+
+Snag UI is a Chrome extension that turns any element on any website into a compact React component.
 Click the toolbar icon, hover something you like, click it, and you get:
 
 - **React + Tailwind** (v4 class names, plus arbitrary values where no utility fits)
